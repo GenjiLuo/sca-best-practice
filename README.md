@@ -13,7 +13,7 @@
 ##### 注意给startup.sh相应的执行权限,chmod +x startup.sh，默认监听IP和端口 127.0.0.1:9999
 
 #### 调用方法
-POST请求
+##### POST请求
      * 通过postman或curl等HTTP请求工具或类库，对接口进行调用。
      * http://127.0.0.1:9999/hanlp/v1/hanlp/segment
      * 请求头中，设置"Content-Type:x-www-form-urlencoded"，参数key为“sentence”，value为“你好，欢迎使用HanLP汉语处理包！”。
