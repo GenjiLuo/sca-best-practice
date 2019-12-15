@@ -4,7 +4,7 @@
 
 ## 环境配置要求 
     * CentOS 7.0.x 或以上
-    * JDK 1.7或以上
+    * 推荐 JDK 1.8以上
     * Maven
 
 ## Getting Started
