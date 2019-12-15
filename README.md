@@ -1,17 +1,26 @@
-# Microservice for HanLP
+# Microservice for NLP
 
-本项目基于https://github.com/alibaba/sca-best-practice， 环境配置请参照该项目。项目将hanlp（ https://github.com/hankcs/HanLP ）提供的多数接口进行了封装微服务化。
+本项目基于alibaba/sca-best-practice架框构建， 项目将Hanlp提供的多数接口进行了封装微服务化，以便Web端调用。
+
+## 环境配置要求 
+    * CentOS 7.0.x 或以上
+    * JDK 1.7或以上
+    * Maven
 
 ## Getting Started
 
-环境配置结束后需要依次启动nacos、sentinel-dashboard、sca-gateway、sca-hanlp。
-通过postman进行接口调用http://127.0.0.1:9999/hanlp/v1/hanlp/segment
+基础环境配置结束后需要在shell命令行下执行 starup.sh ，依次启动nacos、sentinel-dashboard、sca-gateway、sca-hanlp。
+##### 注意给startup.sh相应的执行权限,chmod +x startup.sh，默认监听IP和端口 127.0.0.1:9999
+
+#### 调用方法
+POST请求
+通过postman或curl等HTTP请求工具或类库，进行接口调用http://127.0.0.1:9999/hanlp/v1/hanlp/segment
 请求方式选择post，body中选择x-www-form-urlencoded，参数key为“sentence”，value为“你好，欢迎使用HanLP汉语处理包！”。
-同时，项目也准备了测试环境http://api.acgnfuns.com/hanlp/v1/hanlp/segment ，欢迎试用。
 
 ## Links
 
-* [nlp_starter](https://github.com/sppsun/nlp_starter)
+* [HanLP官方](https://github.com/hankcs/HanLP)
+* [SCA Best Practice](https://github.com/alibaba/sca-best-practice)
 
 ## Authors
 
