@@ -18,7 +18,7 @@
      * http://127.0.0.1:9999/hanlp/v1/hanlp/segment
      * 请求头中，设置"Content-Type:x-www-form-urlencoded"，参数key为“sentence”，value为“你好，欢迎使用HanLP汉语处理包！”。
 ##### 示例：
-     * >$ curl -H "Content-Type: x-www-form-urlencoded" -X POST --data "{"sentence":"你好，欢迎使用HanLP汉语处理包！"}"
+     * >$ curl -H "Content-Type: x-www-form-urlencoded" -X POST --data "sentence=你好，欢迎使用HanLP汉语处理包！"
 
 ## Control
 #### 访问控制器
