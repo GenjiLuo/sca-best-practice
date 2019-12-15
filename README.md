@@ -18,6 +18,14 @@
      * http://127.0.0.1:9999/hanlp/v1/hanlp/segment
      * 请求头中，设置"Content-Type:x-www-form-urlencoded"，参数key为“sentence”，value为“你好，欢迎使用HanLP汉语处理包！”。
 
+## Control
+#### 访问控制器
+     * ## 以下为微服务对应的请求入口/接口清单,
+     ** sca-best-practice/sca-hanlp/src/main/java/com/acgnfuns/controller/HanlpController.java
+     
+     * ## 以下为微服务具体业务实现
+     ** sca-best-practice/sca-hanlp/src/main/java/com/acgnfuns/service/HanlpService.java
+     
 ## Links
 
 * [HanLP官方](https://github.com/hankcs/HanLP)
